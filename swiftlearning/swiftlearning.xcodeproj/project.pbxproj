@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		017C6A8C238F816500E8E429 /* LWNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */; };
 		01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228B238F7A9300531B00 /* AppDelegate.swift */; };
 		01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228D238F7A9300531B00 /* SceneDelegate.swift */; };
 		01DB2290238F7A9300531B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228F238F7A9300531B00 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNavigationViewController.swift; sourceTree = "<group>"; };
 		01DB2288238F7A9300531B00 /* swiftlearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftlearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB228B238F7A9300531B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DB228D238F7A9300531B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		017C6A8A238F809900E8E429 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				01DB22C1238F7C5F00531B00 /* LWSnapKitDemoViewController.swift in Sources */,
 				01DB2290238F7A9300531B00 /* ViewController.swift in Sources */,
+				017C6A8C238F816500E8E429 /* LWNavigationViewController.swift in Sources */,
 				01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */,
 				01DB22C6238F7EDB00531B00 /* Bundle+Extensions.swift in Sources */,
 				01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */,
