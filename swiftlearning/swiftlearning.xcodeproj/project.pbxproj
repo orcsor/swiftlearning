@@ -15,6 +15,8 @@
 		01DB2298238F7A9600531B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DB2296238F7A9600531B00 /* LaunchScreen.storyboard */; };
 		01DB22A3238F7A9700531B00 /* swiftlearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22A2238F7A9700531B00 /* swiftlearningTests.swift */; };
 		01DB22AE238F7A9700531B00 /* swiftlearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22AD238F7A9700531B00 /* swiftlearningUITests.swift */; };
+		01DB22BD238F7C3800531B00 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB22BC238F7C3800531B00 /* SnapKit.framework */; };
+		01DB22C1238F7C5F00531B00 /* SnapKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		01DB22A9238F7A9700531B00 /* swiftlearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftlearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB22AD238F7A9700531B00 /* swiftlearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftlearningUITests.swift; sourceTree = "<group>"; };
 		01DB22AF238F7A9700531B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DB22BC238F7C3800531B00 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DB22BD238F7C3800531B00 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				01DB22A1238F7A9700531B00 /* swiftlearningTests */,
 				01DB22AC238F7A9700531B00 /* swiftlearningUITests */,
 				01DB2289238F7A9300531B00 /* Products */,
+				01DB22BB238F7C3800531B00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 		01DB228A238F7A9300531B00 /* swiftlearning */ = {
 			isa = PBXGroup;
 			children = (
+				01DB22BE238F7C4200531B00 /* Demo */,
 				01DB228B238F7A9300531B00 /* AppDelegate.swift */,
 				01DB228D238F7A9300531B00 /* SceneDelegate.swift */,
 				01DB228F238F7A9300531B00 /* ViewController.swift */,
@@ -128,6 +135,30 @@
 			path = swiftlearningUITests;
 			sourceTree = "<group>";
 		};
+		01DB22BB238F7C3800531B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01DB22BC238F7C3800531B00 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01DB22BE238F7C4200531B00 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				01DB22BF238F7C4A00531B00 /* SnapKitDemo */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		01DB22BF238F7C4A00531B00 /* SnapKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */,
+			);
+			path = SnapKitDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +169,7 @@
 				01DB2284238F7A9300531B00 /* Sources */,
 				01DB2285238F7A9300531B00 /* Frameworks */,
 				01DB2286238F7A9300531B00 /* Resources */,
+				01DB22C2238F7C9600531B00 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,11 +286,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01DB22C2238F7C9600531B00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01DB2284238F7A9300531B00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DB22C1238F7C5F00531B00 /* SnapKitDemoViewController.swift in Sources */,
 				01DB2290238F7A9300531B00 /* ViewController.swift in Sources */,
 				01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */,
 				01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */,
@@ -436,6 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q3645T4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = swiftlearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +512,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6Q3645T4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = swiftlearning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
