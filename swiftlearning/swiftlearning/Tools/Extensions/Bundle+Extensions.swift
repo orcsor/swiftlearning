@@ -9,6 +9,8 @@
 import UIKit
 
 extension Bundle {
+    
+    /// 命名空间
     var namespace: String {
         return infoDictionary?["CFBundleName"] as? String ?? ""
     }
