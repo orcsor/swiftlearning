@@ -11,6 +11,8 @@ import UIKit
 private let cellId = "cellId"
 
 class ViewController: UITableViewController {
+    
+    private var vcArray:[[String: String]]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,13 @@ extension ViewController {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         
+        
+        // 1. 获取viewcontroller配置
+        vcArray = [
+            ["vc": "LWSnapKitDemoViewController", "title": "SnipKit Demo"]
+        ]
+        
+        // 2. 设置表格
     }
 }
 
@@ -37,13 +46,14 @@ extension ViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         
-        cell.textLabel?.text = "hello \(indexPath.row)"
+        let title = vcArray?[indexPath.row]["title"] ?? "忘记设置标题？"
+        cell.textLabel?.text = "\(title)"
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return vcArray?.count ?? 0
     }
     
 }
