@@ -29,11 +29,11 @@ extension ViewController {
     private func setupUI() {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-        
+
         
         // 1. 获取viewcontroller配置
         vcArray = [
-            ["vc": "LWSnapKitDemoViewController", "title": "SnipKit Demo"]
+            ["className": "LWSnapKitDemoViewController", "title": "SnipKit Demo"]
         ]
         
         // 2. 设置表格
@@ -49,11 +49,30 @@ extension ViewController {
         let title = vcArray?[indexPath.row]["title"] ?? "忘记设置标题？"
         cell.textLabel?.text = "\(title)"
         
+        cell.accessoryType = .disclosureIndicator
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vcArray?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("点击\(indexPath.row)")
+        
+        guard let clsName = vcArray?[indexPath.row]["className"],
+            let title = vcArray?[indexPath.row]["title"],
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else {
+                print("读取类错误")
+                return
+        }
+        
+        let vc = cls.init()
+        vc.title = title
+        
+        navigationController?.pushViewController(vc, animated: true)
+         
     }
     
 }
