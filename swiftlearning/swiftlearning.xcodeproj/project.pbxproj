@@ -17,6 +17,7 @@
 		01DB22AE238F7A9700531B00 /* swiftlearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22AD238F7A9700531B00 /* swiftlearningUITests.swift */; };
 		01DB22BD238F7C3800531B00 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB22BC238F7C3800531B00 /* SnapKit.framework */; };
 		01DB22C1238F7C5F00531B00 /* SnapKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */; };
+		01DB22C6238F7EDB00531B00 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22C5238F7EDB00531B00 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		01DB22AF238F7A9700531B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DB22BC238F7C3800531B00 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitDemoViewController.swift; sourceTree = "<group>"; };
+		01DB22C5238F7EDB00531B00 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		01DB228A238F7A9300531B00 /* swiftlearning */ = {
 			isa = PBXGroup;
 			children = (
+				01DB22C3238F7EAE00531B00 /* Tools */,
 				01DB22BE238F7C4200531B00 /* Demo */,
 				01DB228B238F7A9300531B00 /* AppDelegate.swift */,
 				01DB228D238F7A9300531B00 /* SceneDelegate.swift */,
@@ -157,6 +160,22 @@
 				01DB22C0238F7C5F00531B00 /* SnapKitDemoViewController.swift */,
 			);
 			path = SnapKitDemo;
+			sourceTree = "<group>";
+		};
+		01DB22C3238F7EAE00531B00 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				01DB22C4238F7EB900531B00 /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		01DB22C4238F7EB900531B00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01DB22C5238F7EDB00531B00 /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +334,7 @@
 				01DB22C1238F7C5F00531B00 /* SnapKitDemoViewController.swift in Sources */,
 				01DB2290238F7A9300531B00 /* ViewController.swift in Sources */,
 				01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */,
+				01DB22C6238F7EDB00531B00 /* Bundle+Extensions.swift in Sources */,
 				01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
