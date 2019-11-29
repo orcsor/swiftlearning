@@ -1,1 +1,3 @@
-github "Snapkit/Snapkit" "5.0.1"
+git "file:///Users/liuwei/Desktop/Projects/iosframework/Alamofire" "4.9.1"
+git "file:///Users/liuwei/Desktop/Projects/iosframework/HandyJSON" "5.0.1"
+git "file:///Users/liuwei/Desktop/Projects/iosframework/SnapKit" "5.0.1"

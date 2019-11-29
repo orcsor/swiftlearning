@@ -9,13 +9,19 @@
 import UIKit
 import SnapKit
 
-class LWSnapKitDemoViewController: UIViewController {
+class LWSnapKitDemoViewController: LWViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+}
+
+
+extension LWSnapKitDemoViewController {
+    
+    /// 基本设置
     private func demo1() {
         let v = UIView()
         v.backgroundColor = .red
@@ -25,5 +31,5 @@ class LWSnapKitDemoViewController: UIViewController {
             m.center.equalTo(self.view)
         }
     }
-
+    
 }

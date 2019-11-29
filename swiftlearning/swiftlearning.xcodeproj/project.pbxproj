@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015E62012390E2320015FE49 /* LWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E62002390E2320015FE49 /* LWViewController.swift */; };
+		015E62032390E24F0015FE49 /* LWHandyJSONDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E62022390E24F0015FE49 /* LWHandyJSONDemoViewController.swift */; };
+		015E62082390E6870015FE49 /* LWAlamofireDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E62072390E6870015FE49 /* LWAlamofireDemoViewController.swift */; };
 		017C6A8C238F816500E8E429 /* LWNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */; };
 		01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228B238F7A9300531B00 /* AppDelegate.swift */; };
 		01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228D238F7A9300531B00 /* SceneDelegate.swift */; };
@@ -16,7 +19,6 @@
 		01DB2298238F7A9600531B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DB2296238F7A9600531B00 /* LaunchScreen.storyboard */; };
 		01DB22A3238F7A9700531B00 /* swiftlearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22A2238F7A9700531B00 /* swiftlearningTests.swift */; };
 		01DB22AE238F7A9700531B00 /* swiftlearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22AD238F7A9700531B00 /* swiftlearningUITests.swift */; };
-		01DB22BD238F7C3800531B00 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB22BC238F7C3800531B00 /* SnapKit.framework */; };
 		01DB22C1238F7C5F00531B00 /* LWSnapKitDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22C0238F7C5F00531B00 /* LWSnapKitDemoViewController.swift */; };
 		01DB22C6238F7EDB00531B00 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB22C5238F7EDB00531B00 /* Bundle+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015E62002390E2320015FE49 /* LWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWViewController.swift; sourceTree = "<group>"; };
+		015E62022390E24F0015FE49 /* LWHandyJSONDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHandyJSONDemoViewController.swift; sourceTree = "<group>"; };
+		015E62072390E6870015FE49 /* LWAlamofireDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWAlamofireDemoViewController.swift; sourceTree = "<group>"; };
 		017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNavigationViewController.swift; sourceTree = "<group>"; };
 		01DB2288238F7A9300531B00 /* swiftlearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftlearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB228B238F7A9300531B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +59,6 @@
 		01DB22A9238F7A9700531B00 /* swiftlearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftlearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB22AD238F7A9700531B00 /* swiftlearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftlearningUITests.swift; sourceTree = "<group>"; };
 		01DB22AF238F7A9700531B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01DB22BC238F7C3800531B00 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		01DB22C0238F7C5F00531B00 /* LWSnapKitDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWSnapKitDemoViewController.swift; sourceTree = "<group>"; };
 		01DB22C5238F7EDB00531B00 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DB22BD238F7C3800531B00 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +88,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015E61FF2390E2060015FE49 /* HandyJSONDemo */ = {
+			isa = PBXGroup;
+			children = (
+				015E62022390E24F0015FE49 /* LWHandyJSONDemoViewController.swift */,
+			);
+			path = HandyJSONDemo;
+			sourceTree = "<group>";
+		};
+		015E62062390E67A0015FE49 /* AlamofireDemo */ = {
+			isa = PBXGroup;
+			children = (
+				015E62072390E6870015FE49 /* LWAlamofireDemoViewController.swift */,
+			);
+			path = AlamofireDemo;
+			sourceTree = "<group>";
+		};
 		017C6A8A238F809900E8E429 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */,
+				015E62002390E2320015FE49 /* LWViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -152,7 +172,6 @@
 		01DB22BB238F7C3800531B00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01DB22BC238F7C3800531B00 /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,6 +179,8 @@
 		01DB22BE238F7C4200531B00 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				015E62062390E67A0015FE49 /* AlamofireDemo */,
+				015E61FF2390E2060015FE49 /* HandyJSONDemo */,
 				01DB22BF238F7C4A00531B00 /* SnapKitDemo */,
 			);
 			path = Demo;
@@ -327,6 +348,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/HandyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -343,8 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015E62012390E2320015FE49 /* LWViewController.swift in Sources */,
 				01DB22C1238F7C5F00531B00 /* LWSnapKitDemoViewController.swift in Sources */,
+				015E62082390E6870015FE49 /* LWAlamofireDemoViewController.swift in Sources */,
 				01DB2290238F7A9300531B00 /* ViewController.swift in Sources */,
+				015E62032390E24F0015FE49 /* LWHandyJSONDemoViewController.swift in Sources */,
 				017C6A8C238F816500E8E429 /* LWNavigationViewController.swift in Sources */,
 				01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */,
 				01DB22C6238F7EDB00531B00 /* Bundle+Extensions.swift in Sources */,

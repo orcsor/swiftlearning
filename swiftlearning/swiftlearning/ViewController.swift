@@ -33,7 +33,9 @@ extension ViewController {
         
         // 1. 获取viewcontroller配置
         vcArray = [
-            ["className": "LWSnapKitDemoViewController", "title": "SnipKit Demo"]
+            ["className": "LWSnapKitDemoViewController", "title": "SnipKit Demo"],
+            ["className": "LWHandyJSONDemoViewController", "title": "HandyJSON Demo"],
+            ["className": "LWAlamofireDemoViewController", "title": "Alamofire Demo"]
         ]
         
         // 2. 设置表格
