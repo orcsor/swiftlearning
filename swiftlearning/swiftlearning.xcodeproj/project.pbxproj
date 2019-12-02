@@ -11,6 +11,7 @@
 		015E62032390E24F0015FE49 /* LWHandyJSONDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E62022390E24F0015FE49 /* LWHandyJSONDemoViewController.swift */; };
 		015E62082390E6870015FE49 /* LWAlamofireDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015E62072390E6870015FE49 /* LWAlamofireDemoViewController.swift */; };
 		017C6A8C238F816500E8E429 /* LWNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */; };
+		01B0C41423956B0000F8975F /* LWImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0C41323956B0000F8975F /* LWImageDemoViewController.swift */; };
 		01DB228C238F7A9300531B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228B238F7A9300531B00 /* AppDelegate.swift */; };
 		01DB228E238F7A9300531B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228D238F7A9300531B00 /* SceneDelegate.swift */; };
 		01DB2290238F7A9300531B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB228F238F7A9300531B00 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		015E62022390E24F0015FE49 /* LWHandyJSONDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHandyJSONDemoViewController.swift; sourceTree = "<group>"; };
 		015E62072390E6870015FE49 /* LWAlamofireDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWAlamofireDemoViewController.swift; sourceTree = "<group>"; };
 		017C6A8B238F816500E8E429 /* LWNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWNavigationViewController.swift; sourceTree = "<group>"; };
+		01B0C41323956B0000F8975F /* LWImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWImageDemoViewController.swift; sourceTree = "<group>"; };
 		01DB2288238F7A9300531B00 /* swiftlearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftlearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB228B238F7A9300531B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DB228D238F7A9300531B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		01B0C41223956ACF00F8975F /* ImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				01B0C41323956B0000F8975F /* LWImageDemoViewController.swift */,
+			);
+			path = ImageDemo;
+			sourceTree = "<group>";
+		};
 		01DB227F238F7A9300531B00 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 		01DB22BE238F7C4200531B00 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				01B0C41223956ACF00F8975F /* ImageDemo */,
 				015E62062390E67A0015FE49 /* AlamofireDemo */,
 				015E61FF2390E2060015FE49 /* HandyJSONDemo */,
 				01DB22BF238F7C4A00531B00 /* SnapKitDemo */,
@@ -368,6 +379,7 @@
 			files = (
 				015E62012390E2320015FE49 /* LWViewController.swift in Sources */,
 				01DB22C1238F7C5F00531B00 /* LWSnapKitDemoViewController.swift in Sources */,
+				01B0C41423956B0000F8975F /* LWImageDemoViewController.swift in Sources */,
 				015E62082390E6870015FE49 /* LWAlamofireDemoViewController.swift in Sources */,
 				01DB2290238F7A9300531B00 /* ViewController.swift in Sources */,
 				015E62032390E24F0015FE49 /* LWHandyJSONDemoViewController.swift in Sources */,

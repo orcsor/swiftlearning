@@ -35,7 +35,8 @@ extension ViewController {
         vcArray = [
             ["className": "LWSnapKitDemoViewController", "title": "SnipKit Demo"],
             ["className": "LWHandyJSONDemoViewController", "title": "HandyJSON Demo"],
-            ["className": "LWAlamofireDemoViewController", "title": "Alamofire Demo"]
+            ["className": "LWAlamofireDemoViewController", "title": "Alamofire Demo"],
+            ["className": "LWImageDemoViewController", "title": "图片优化 Demo"]
         ]
         
         // 2. 设置表格
